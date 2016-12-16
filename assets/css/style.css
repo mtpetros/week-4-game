@@ -1,3 +1,29 @@
+.jumbotron {
+    text-align: center;    
+}
+
+.instructions { 
+    text-align: center; 
+}
+
+#random-number > p {
+    font-size: 25px;
+}
+
+#status, #wins, #losses {
+    font-size: 25px;
+}
+
 .crystal img {
-    width: 200px;
+    width: 175px;
+    margin-bottom: 10px;
+}
+
+#total > p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.well {
+    background-color: rgb(200, 250, 225);
 }

@@ -10,30 +10,31 @@ var emeraldVal = Math.floor((Math.random() * 12 ) + 1 );
 var topazVal = Math.floor((Math.random() * 12 ) + 1 );
 
 //This writes the randomNumber to the DOM
-$("#random-number").html(randomNumber);
+$("#random-number").html("<p>Number to Match: " + randomNumber + "</p>");
+$("#status").html("<p>Good Luck!</p>");
 
 //What happens when you click the crystals?
 $("#diamond").click(function() {
   total+=diamondVal;
-  $("#total").html("<p>" + total + "</p>");
+  $("#total").html("<p>Total: " + total + "</p>");
   result();
 });
 
 $("#ruby").click(function() {
   total+=rubyVal;
-  $("#total").html("<p>" + total + "</p>");
+  $("#total").html("<p>Total: " + total + "</p>");
   result();
 });
 
 $("#emerald").click(function() {
   total+=emeraldVal;
-  $("#total").html("<p>" + total + "</p>");
+  $("#total").html("<p>Total: " + total + "</p>");
   result();
 });
 
 $("#topaz").click(function() {
   total+=topazVal;
-  $("#total").html("<p>" + total + "</p>");
+  $("#total").html("<p>Total: " + total + "</p>");
   result();
 });
 
@@ -60,9 +61,8 @@ function reset() {
   rubyVal = Math.floor((Math.random() * 12 ) + 1 );
   emeraldVal = Math.floor((Math.random() * 12 ) + 1 );
   topazVal = Math.floor((Math.random() * 12 ) + 1 );
-  $("#random-number").html(randomNumber);
-  $("#total").html("");
-  //$("#status").html("");
+  $("#random-number").html("<p>Number to Match: " + randomNumber + "</p>");
+  $("#total").html("<p>Total: 0</p>");
 }
 
 

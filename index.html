@@ -10,10 +10,14 @@
   <body>
 
   <div class="container">
-    <h1 class="jumbotron">Crystal Collector</h1>
+    <div class="row">
+      <div class="jumbotron col-md-12 well well-sm">
+        <h1>Crystal Collector</h1>
+      </div>
+    </div>
   </div>
   
-  <div class="instructions container">
+  <div class="instructions container well well-sm">
     <div class="row">
       <div class="col-md-12">
         <h2>How to Play:</h2>
@@ -29,11 +33,12 @@
 
   <div class="game-area container">
     <div class="row">
-      <div id="random-number" class="col-md-4">
+      <div id="random-number" class="col-md-5 well well-sm">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-5 col-md-offset-2 well well-sm">
         <div class="row">
           <div id="status" class="col-md-12">
+            <p></p>
           </div>
         </div>
         <div class="row">
@@ -44,22 +49,23 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row crystal-container">
       <div class="crystal col-md-2">
         <img src="assets/images/diamond.png" id="diamond">
       </div>
-      <div class="crystal col-md-2">
+      <div class="crystal col-md-2 col-md-offset-1">
         <img src="assets/images/ruby.png" id="ruby">
       </div>
-      <div class="crystal col-md-2">
+      <div class="crystal col-md-2 col-md-offset-1">
         <img src="assets/images/emerald.png" id="emerald">
       </div>
-      <div class="crystal col-md-2">
+      <div class="crystal col-md-2 col-md-offset-1">
         <img src="assets/images/topaz.png"  id="topaz">
       </div>
     </div>
     <div class="row">
-      <div id="total" class="col-md-8">
+      <div id="total" class="col-md-8 col-md-offset-2 well well-sm">
+        <p>Total: 0</p>
       </div>
     </div>
   </div>
